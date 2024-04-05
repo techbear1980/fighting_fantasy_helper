@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="widget-container">
+            <div class="widget-label">
+                <label>Stats</label>
+            </div>
+            <div class="widget-row">
+                <div class="widget">
+                    <label class="label" for="skill-initial">I SKILL:</label>
+                    <input type="number" id="skill-initial" value="10" min="0" max="999">
+                    <label class="label" for="skill-current">C SKILL:</label>
+                    <input type="number" id="skill-current" value="10" min="0" max="999">
+                </div>
+                <div class="widget">
+                    <label class="label" for="stamina-initial">I STAMINA:</label>
+                    <input type="number" id="stamina-initial" value="10" min="0" max="999">
+                    <label class="label" for="stamina-current">C STAMINA:</label>
+                    <input type="number" id="stamina-current" value="10" min="0" max="999">
+                </div>
+                <div class="widget">
+                    <label class="label" for="luck-initial">I LUCK:</label>
+                    <input type="number" id="luck-initial" value="10" min="0" max="999">
+                    <label class="label" for="luck-current">C LUCK:</label>
+                    <input type="number" id="luck-current" value="10" min="0" max="999">
+                </div>
+            </div>
+        </div>
+        <div class="widget-container">
+            <div class="widget-label">
+                <label>Backpack</label>
+            </div>
+            <div class="widget-row">
+                <div class="widget">
+                    <label class="label" for="gold">GOLD:</label>
+                    <input type="number" id="gold" value="0" min="0" max="999">
+                </div>
+                <div class="widget">
+                    <label class="label" for="provisions">PROVISIONS:</label>
+                    <input type="number" id="provisions" value="0" min="0" max="999">
+                </div>
+            </div>
+        </div>
+        <div class="widget-container">
+            <div class="widget-label">
+                <label>Potions</label>
+            </div>
+            <div class="widget-row">
+                <div class="widget">
+                    <label class="label" for="potions-skill">SKILL:</label>
+                    <input type="number" id="potions-skill" value="0" min="0" max="999">
+                </div>
+                <div class="widget">
+                    <label class="label" for="potions-strength">STRENGTH:</label>
+                    <input type="number" id="potions-strength" value="0" min="0" max="999">
+                </div>
+                <div class="widget">
+                    <label class="label" for="potions-fortune">FORTUNE:</label>
+                    <input type="number" id="potions-fortune" value="0" min="0" max="999">
+                </div>
+            </div>
+        </div>
+        <div class="widget-container">
+            <div class="widget-label">
+                <label>Monster Battle</label>
+            </div>
+            <div class="widget-row">
+                <div class="widget">
+                    <label class="label" for="monster-skill">SKILL:</label>
+                    <input type="number" id="monster-skill" value="10" min="0" max="999">
+                </div>
+                <div class="widget">
+                    <label class="label" for="monster-stamina">STAMINA:</label>
+                    <input type="number" id="monster-stamina" value="10" min="0" max="999">
+                </div>
+                <div class="widget">
+                    <button id="fight-button">Fight!</button>
+                </div>
+                <div class="widget">
+                    <input type="text" id="battle-result-text" readonly>
+                </div>
+            </div>
+        </div>
+
+        <div class="widget-container">
+            <div class="widget-label">
+                <label>Test Your Luck</label>
+            </div>
+            <div class="widget-row">
+                <div class="widget">
+                    <button id="luck-check-button">Check!</button>
+                </div>
+                <div class="widget">
+                    <input type="text" id="luck-result-text" readonly>
+                </div>
+            </div>
+        </div>
+
+        <div class="widget-container">
+            <div class="widget-label">
+                <label>Roll Two Dice</label>
+            </div>
+            <div class="widget-row">
+                <div class="widget">
+                    <button id="roll-dice-button">Check!</button>
+                </div>
+                <div class="widget">
+                    <input type="number" id="dice-1" value="1" min="1" max="6">
+                </div>
+                <div class="widget">
+                    <input type="number" id="dice-2" value="1" min="1" max="6">
+                </div>
+            </div>
+        </div>
+
+        <div class="widget">
+            <label class="label" for="notes">Notes:</label>
+            <textarea id="notes" class="textarea" placeholder="Enter your notes here..."></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Default font size */
+}
+
+.container {
+    width: 90%; /* Change width to a percentage */
+    max-width: 800px; /* Add max-width to prevent it from getting too wide */
+    margin: 50px auto;
+}
+
+.widget {
+    margin-bottom: 10px;
+}
+
+.label {
+    display: inline-block;
+    width: 150px; /* Increase width for labels */
+    font-size: 20px; /* Increased font size for labels */
+}
+
+.input-group {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+    .input-group input[type="number"] {
+        width: 70px; /* Increased width */
+        text-align: center;
+        margin: 0 5px;
+        font-size: 20px; /* Increased font size for number input fields */
+    }
+
+.textarea {
+    width: 100%;
+    height: 500px;
+    resize: vertical;
+    font-size: 16px; /* Default font size */
+}
+
+.widget-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow widget rows to wrap onto the next line */
+}
+
+    .widget-row .widget {
+        flex: 0 0 calc(33.33% - 20px); /* Ensure each widget occupies 33.33% of the width with some spacing */
+        margin-right: 20px; /* Add spacing between widgets */
+    }
+
+        .widget-row .widget:last-child {
+            margin-right: 0; /* Remove right margin from the last widget in a row */
+        }
+
+.widget-container {
+    border: 2px solid #ccc; /* Add border around widget container */
+    padding: 10px; /* Add padding inside widget container */
+    margin-bottom:
